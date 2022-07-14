@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -11,17 +9,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -35,4 +22,60 @@
   to {
     transform: rotate(360deg);
   }
+}
+#light{
+  background-color: white;
+}
+#light .table{
+  color: black;
+}
+#light a{
+  background-color: white;
+  color: blue;
+}
+
+#dark{
+  background-color: black;
+}
+#dark .table{
+  color:white;
+}
+#dark a{
+  color: white;
+}
+#dark button{
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+}
+#dark button:hover{
+  background-color: rgb(63, 62, 62);
+}
+#light button{
+  border: 1px solid black;
+  color: black;
+  border-radius: 5px;
+}
+#light button:hover{
+  background-color: grey;
+}
+.switch {
+  display: flex;
+  width: 100vw;
+  height: 1px;
+  flex-direction: row-reverse;
+  align-content: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.switch label {
+  margin-left: 5px;
+}
+
+#light .switch label {
+  color: black;
+}
+
+#dark .switch label {
+  color: white;
 }
