@@ -1,8 +1,7 @@
 import React, { createContext, useState } from 'react';
 import './App.css';
 import ReactSwitch from "react-switch";
-// import other from './Other.module.css'; .module is important!
-// import { TitleClassComponent, TitleFnComponent } from "./components/title"
+
 
 import { DataGrid, DataGridClsComponent } from './components/data-grid';
 import { Header } from './components/header';
