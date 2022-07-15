@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState,useCallback } from 'react';
 import './App.css';
 import ReactSwitch from "react-switch";
 
@@ -15,9 +15,10 @@ function App() {
   
   const [activeTab, setActiveTab] = useState("fn")
   const [theme,setTheme] = useState("light")
-  const toggleTheme = () => {
+  
+  const toggleTheme = useCallback(() => {
     setTheme((curr) => (curr ==="light"? "dark" : "light"));
-  }
+  },[setTheme])
 
   return (
     <ThemeContext.Provider value={{theme,toggleTheme}}>
